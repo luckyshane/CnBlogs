@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="author_txt_color">#666666</color>
+    <color name="blog_update_time_color">#AAAAAA</color>
+    <color name="blog_title_color">#333333</color>
+    <color name="blog_subtitle_color">#666666</color>
+
 </resources>

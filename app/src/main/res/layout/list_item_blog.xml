@@ -1,8 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/blog_item_padding_hor"
+    android:paddingTop="@dimen/blog_item_padding_ver"
+    android:paddingRight="@dimen/blog_item_padding_hor"
+    android:paddingBottom="@dimen/blog_item_padding_ver">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="@dimen/blog_avatar_size"
+            android:layout_height="@dimen/blog_avatar_size" />
 
+        <TextView
+            android:id="@+id/authorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:text="Shane"
+            android:textColor="@color/author_txt_color"
+            android:textSize="@dimen/blog_author_txt_size" />
+
+        <TextView
+            android:id="@+id/updateTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:text="两分钟前"
+            android:textColor="@color/blog_update_time_color"
+            android:textSize="@dimen/blog_update_time_txt_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/blogTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="认识自己，接纳自己"
+        android:textStyle="bold"
+        android:textColor="@color/blog_title_color"
+        android:textSize="@dimen/blog_title_size" />
+
+    <TextView
+        android:id="@+id/blogSubtitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="2dp"
+        android:text="Python 资源 我想很多程序员应该记得 GitHub 上有一个 Awesome - XXX 系列的资源整理。awesome-python是 vinta 发起维护的 Pyt."
+        android:textColor="@color/blog_subtitle_color"
+        android:textSize="@dimen/blog_subtitle_size" />
 </LinearLayout>
