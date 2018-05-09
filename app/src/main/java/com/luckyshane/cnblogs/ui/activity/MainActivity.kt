@@ -6,10 +6,10 @@ import android.support.v4.view.ViewPager
 import android.view.MenuItem
 import com.luckyshane.cnblogs.R
 import com.luckyshane.cnblogs.adapter.ViewPagerAdapter
-import com.luckyshane.cnblogs.ui.fragment.BaseFragment
-import com.luckyshane.cnblogs.ui.fragment.HomeFragment
-import com.luckyshane.cnblogs.ui.fragment.NewsFragment
-import com.luckyshane.cnblogs.ui.fragment.RankListFragment
+import com.luckyshane.cnblogs.ui.fragment.BaseBlogFragment
+import com.luckyshane.cnblogs.ui.fragment.HomeBlogFragment
+import com.luckyshane.cnblogs.ui.fragment.NewsBlogFragment
+import com.luckyshane.cnblogs.ui.fragment.RankListBlogFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
@@ -40,10 +40,10 @@ class MainActivity : BaseActivity() {
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
-        val fmList = ArrayList<BaseFragment>()
-        fmList.add(HomeFragment())
-        fmList.add(NewsFragment())
-        fmList.add(RankListFragment())
+        val fmList = ArrayList<BaseBlogFragment>()
+        fmList.add(HomeBlogFragment())
+        fmList.add(NewsBlogFragment())
+        fmList.add(RankListBlogFragment())
 
         mainViewPager.run {
             adapter = ViewPagerAdapter(supportFragmentManager, fmList)
