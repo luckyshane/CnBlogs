@@ -18,15 +18,15 @@ class MainActivity : BaseActivity() {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                mainViewPager.currentItem = 0
+                mainViewPager.setCurrentItem(0, false)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_dashboard -> {
-                mainViewPager.currentItem = 1
+                mainViewPager.setCurrentItem(1, false)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_notifications -> {
-                mainViewPager.currentItem = 2
+                mainViewPager.setCurrentItem(2, false)
                 return@OnNavigationItemSelectedListener true
             }
         }
